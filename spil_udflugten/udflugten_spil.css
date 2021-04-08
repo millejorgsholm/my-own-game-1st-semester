@@ -1,0 +1,706 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#screen {
+    position: relative;
+    width: 100vw;
+    height: 56.25vw;
+    background-color: rebeccapurple;
+}
+
+#game {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#game_background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(baggrund2.svg);
+    background-size: cover;
+    
+}
+
+
+#game_elements {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#start{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(startskaerm.svg);
+    background-size: cover;
+    top: 0;
+    left: 0;
+   
+}
+
+/*Start knap*/
+
+#start_button_container{
+    position: absolute;
+    right: 23.5vw;
+    bottom: 34vw;
+
+}
+
+#start_button{
+    background-image: url(play_button.svg);
+    background-size: cover;
+    width: 8vw;
+    height: 8vw;
+    
+    
+}
+
+/*Level complete/game over skærme*/
+
+#level_complete{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(level_complete.svg);
+    background-size: cover;
+    top: 0;
+    left: 0;
+}
+
+#game_over{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(game_over.svg);
+    background-size: cover;
+    top: 0;
+    left: 0;
+    color: white;
+    font-family: 'roboto';
+    font-size: 1.2rem;
+   
+}
+
+/*Game over/level complete tekst*/
+
+#level_complete_text{
+    color: white;
+    font-family: 'roboto';
+    font-size: 1.6rem;
+    position: absolute;
+    left: 23.3vw;
+    bottom: 32.4vw
+}
+
+#game_over_text{
+   color: white;
+    font-family: 'roboto';
+    font-size: 1.6rem;
+    position: absolute;
+    left: 21.3vw;
+    bottom: 32.4vw;
+   
+}
+
+/*Home buttons*/
+
+#home_level_complete_button_container{
+    position: absolute;
+    right: 25vw;
+    bottom: 5vw;
+}
+
+#home_level_complete_button{
+    background-image: url(home_button.svg);
+    background-size: cover;
+    width: 11.3vw;
+    height:11.3vw;
+}
+
+
+#home_game_over_button_container{
+    position: absolute;
+    right: 25vw;
+    bottom: 5vw;
+}
+
+#home_game_over_button{
+    background-image: url(home_button.svg);
+    background-size: cover;
+    width: 11.3vw;
+    height:11.3vw;
+}
+
+/*"Spil igen"-knapper*/
+
+#genstart_level_complete_button_container{
+    position: absolute;
+    left: 27vw;
+    bottom: 6vw;
+}
+
+#genstart_level_complete_button{
+    background-image: url(replay_button%20.svg);
+    background-size: cover;
+    width: 11vw;
+    height: 11vw;
+}
+
+
+#genstart_game_over_button_container{
+    position: absolute;
+    left: 25vw;
+    bottom: 6vw;
+}
+
+#genstart_game_over_button{
+    background-image: url(replay_button%20.svg);
+    background-size: cover;
+    width: 11vw;
+    height: 11vw;
+}
+
+/*Sound on/off-knapper*/
+
+#sound_on_button_container{
+    position: absolute;
+    left: 1vw;
+    top: 1vw;
+    
+}
+
+#sound_on_button{
+    background-image: url(sound_on_button.svg);
+    background-size: cover;
+    width: 4vw;
+    height: 4vw;
+}
+
+#sound_off_button_container{
+    position: absolute;
+    left: 1vw;
+    top: 1vw;
+    
+}
+
+#sound_off_button{
+    background-image: url(sound_off_button.svg);
+    background-size: cover;
+    width: 4vw;
+    height: 4vw;
+}
+
+
+
+/************** Hector *****************/
+
+.neutral {
+    background-image: url(sur_hector.svg);
+}
+
+.glad {
+    background-image: url(glad_hector.svg);
+    
+}
+
+.svimmel {
+    background-image: url(svimmel_hector.svg);
+
+}
+
+#surhector_sprite {
+    background-size: cover;
+    width: 21vw;
+    height: 30.6vw;
+
+
+}
+
+#surhector_container {
+    position: absolute;
+    left: 0.1vw;
+    bottom: 1vw;
+
+}
+
+#gladhector_sprite {
+    background-size: cover;
+    width: 20vw;
+    height: 30.6vw;
+
+}
+
+
+#gladhector_container {
+    position: absolute;
+    left: 0.1vw;
+    bottom: 1vw;
+}
+
+#svimmelhector_sprite {
+    background-size: cover;
+    width: 20vw;
+    height: 30.6vw;
+}
+
+
+#svimmelhector_container {
+    position: absolute;
+    left: 0.1vw;
+    bottom: 1vw;
+
+}
+
+
+/*******Bøf*********/
+
+#boef_sprite1 {
+    background-image: url(boef.svg);
+    background-size: cover;
+    width: 8.3vw;
+    height: 7vw;
+
+}
+
+#boef_sprite2 {
+    background-image: url(boef.svg);
+    background-size: cover;
+    width: 8.3vw;
+    height: 7vw;
+
+}
+
+#boef_sprite3 {
+    background-image: url(boef.svg);
+    background-size: cover;
+    width: 8.3vw;
+    height: 7vw;
+
+}
+
+#boef_sprite4 {
+    background-image: url(boef.svg);
+    background-size: cover;
+    width: 8.3vw;
+    height: 7vw;
+
+}
+
+#boef_sprite5 {
+    background-image: url(boef.svg);
+    background-size: cover;
+    width: 8.3vw;
+    height: 7vw;
+
+}
+
+
+/**************Broccoli*****************/
+
+#broccoli_sprite1 {
+    background-image: url(broccoli.svg);
+    background-size: cover;
+    width: 8.3vw;
+    height: 7vw;
+
+}
+
+
+#broccoli_sprite2 {
+    background-image: url(broccoli.svg);
+    background-size: cover;
+    width: 8.3vw;
+    height: 7vw;
+}
+
+
+#broccoli_sprite3 {
+    background-image: url(broccoli.svg);
+    background-size: cover;
+    width: 8.3vw;
+    height: 7vw;
+
+}
+
+#broccoli_sprite4 {
+    background-image: url(broccoli.svg);
+    background-size: cover;
+    width: 8.3vw;
+    height: 7vw;
+
+}
+
+#broccoli_sprite5 {
+    background-image: url(broccoli.svg);
+    background-size: cover;
+    width: 8.3vw;
+    height: 7vw;
+
+}
+
+
+/**************Positions*****************/
+
+#boef_container1,
+#boef_container2,
+#boef_container3,
+#boef_container4,
+#boef_container5,
+#broccoli_container1,
+#broccoli_container2,
+#broccoli_container3,
+#broccoli_container4,
+#broccoli_container5 {
+    position: absolute;
+}
+
+
+.position1 {
+    right: 21.3vw;
+    bottom: 7.5vw;
+}
+
+.position2 {
+    right: 22.7vw;
+    bottom: 30vw;
+
+}
+
+.position3 {
+    left: 38.3vw;
+    bottom: 30vw;
+}
+
+.position4 {
+    left: 38.8vw;
+    bottom: 7.8vw;
+}
+
+.position5 {
+    left: 21.5vw;
+    bottom: 19.4vw;
+
+}
+
+.position6 {
+    left: 23.5vw;
+    top: 19.5vw;
+}
+
+.position7 {
+    left: 70.5vw;
+    top: 30vw;
+}
+
+.position8 {
+    right: 70vw;
+    bottom: 7.5vw;
+}
+
+.position9 {
+    right: 38.5vw;
+    bottom: 7.5vw;
+}
+
+.position10 {
+    right: 38.5vw;
+    bottom: 30.1vw;
+
+}
+
+/*UI-elements*/
+
+/*Score*/
+
+#score_board {
+    color: red;
+    font-family: 'modern sans';
+    font-size: 1.6rem;
+    position: absolute;
+    left: 47.5vw;
+    bottom: 46.4vw;
+    width: 7vw;
+    height: 7vw;
+}
+
+
+
+/*Energy*/
+
+#energy_board {
+    width: 6vw;
+    height: 6vw;
+}
+
+#energy_board_sprite1 {
+    background-image: url(liv.svg);
+    background-size: cover;
+    width: 6vw;
+    height: 6vw;
+}
+
+#energy_board_container1 {
+    position: absolute;
+    left: 1.5vw;
+    bottom: 48.4vw;
+
+}
+
+
+#energy_board_sprite2 {
+    background-image: url(liv.svg);
+    background-size: cover;
+    width: 6vw;
+    height: 6vw;
+}
+
+#energy_board_container2 {
+    position: absolute;
+    left: 5vw;
+    bottom: 48.4vw;
+}
+
+#energy_board_sprite3 {
+    background-image: url(liv.svg);
+    background-size: cover;
+    width: 6vw;
+    height: 6vw;
+}
+
+#energy_board_container3 {
+    position: absolute;
+    left: 8.6vw;
+    bottom: 48.4vw;
+
+}
+
+
+/*Tid*/
+
+/*Mediaqueries*/
+
+@media screen and (min-width: 500px){
+    p, #score_board{
+        font-size: 0.58rem;
+    }
+}
+
+@media screen and (min-width: 600px){
+    p, #score_board{
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (min-width: 700px){
+    p, #score_board{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 800px){
+    p, #score_board{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width: 900px){
+    p, #score_board{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    p, #score_board{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1100px){
+    p, #score_board{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    p, #score_board{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 1300px){
+    p, #score_board{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    p, #score_board{
+        font-size: 1.6rem;
+    }
+}
+
+
+#time_board_sprite {
+    background-image: url(tid.svg);
+    background-size: cover;
+    width: 5.3vw;
+    height: 5.3vw;
+    
+    
+}
+
+#time_board_container {
+    position: absolute;
+    right: 5.5vw;
+    bottom: 48.5vw;
+
+}
+
+
+#time_board_container1 {
+    position: absolute;
+    right: 3.5vw;
+    top: 4.8vw;
+
+}
+
+
+
+#time_count{
+    color: red;
+    font-family: 'modern sans';
+    font-size: 1.4rem;
+    right: 5.5vw;
+    bottom: 48.4vw;
+    
+}
+
+/*Animation*/
+
+.fadeout {
+    animation-name: fadeout_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+@keyframes fadeout_kf {
+
+    0% {
+        opacity: 0;
+
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.gone {
+    animation: gone_kf;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+
+@keyframes gone_kf {
+    0% {
+        opacity: 1;
+
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+.disappear {
+    animation-name: disappear_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+@keyframes disappear_kf {
+    from {
+        transform: scale(1)
+    }
+
+    to {
+        transform: scale(0)
+    }
+}
+
+/*
+.zoom {
+    animation-name: zoom_kf;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes zoom_kf {
+    from {
+        transform: scale(1)
+    }
+
+    to {
+        transform: scale(1.2)
+    }
+}
+*/
+
+.hide {
+    display: none;
+}
+
+.show {
+    opacity: 1;
+}
+
+.grey {
+    filter: grayscale(80%);
+}
+
+.paused {
+    animation-play-state: paused;
+}
+
+.pulse{
+    animation-name: pulse_kf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes pulse_kf {
+    0%{
+        transform: scale(1)
+    }
+    
+
+    50% {
+        transform: scale(0.9)
+    }
+    
+    100% {
+        transform: scale(1)
+    }
+}
+

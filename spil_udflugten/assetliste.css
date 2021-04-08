@@ -1,0 +1,35 @@
+
+body {
+    background-color: grey;
+}
+
+#spilelementer img{
+    max-width: 30%;
+    background-color: pink;
+}
+
+#uielementer img{
+    max-width: 15%;
+    background-color: pink;
+}
+
+#screens img{
+    max-width: 100%;
+    background-color: pink;
+}
+
+a:hover {
+    color: white;
+
+}
+
+nav a:visited {
+    color: pink;
+
+}
+
+h1, h2, p{
+    color: white;
+    font-family: 'Roboto';
+    
+}

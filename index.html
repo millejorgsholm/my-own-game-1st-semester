@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udflugten</title>
+    <link rel="stylesheet" href="udflugten_spil.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="screen">
+        <div id="game">
+            <div id="game_background"></div>
+            <div id="game_elements">
+
+                <div id="surhector_container">
+                    <div id="surhector_sprite" class="neutral"></div>
+                </div>
+                <div id="boef_container1" class="">
+                    <div id="boef_sprite1"></div>
+                </div>
+                <div id="broccoli_container1" class="">
+                    <div id="broccoli_sprite1"></div>
+                </div>
+            </div>
+            <div id="game_foreground"></div>
+            <div id="game_ui">
+                <div id="score_board"></div>
+                <div id="energy_board">
+                    <div id="energy_board_container1">
+                        <div id="energy_board_sprite1"></div>
+                    </div>
+                    <div id="energy_board_container2">
+                        <div id="energy_board_sprite2"></div>
+                    </div>
+                    <div id="energy_board_container3">
+                        <div id="energy_board_sprite3"></div>
+                    </div>
+                </div>
+                <div id="time_board">
+                    <div id="time_board_container">
+                        <div id="time_board_sprite"></div>
+                    </div>
+                    <div id="time_board_container1">
+                        <div id="time_count">30</div>
+                    </div>
+                </div>
+
+                <div id="start">
+                    <div id="start_button_container">
+                        <div id="start_button"></div>
+                    </div>
+                </div>
+
+                <div id="game_over">
+                    <div id="game_over_text">
+                        <p>Øv, du har ikke samlet nok bøffer! Hector er stadigvæk sulten. Prøv igen!</p>
+                    </div>
+                    <div id="genstart_game_over_button_container">
+                        <div id="genstart_game_over_button"></div>
+                    </div>
+                    <div id="home_game_over_button_container">
+                        <div id="home_game_over_button"></div>
+                    </div>
+                </div>
+
+                <div id="level_complete">
+                    <div id="level_complete_text">
+                        <p>Tillykke, du har samlet nok bøffer! Hector er nu mæt. Vil du spille igen?</p>
+                    </div>
+                    <div id="genstart_level_complete_button_container">
+                        <div id="genstart_level_complete_button"></div>
+                    </div>
+                    <div id="home_level_complete_button_container">
+                        <div id="home_level_complete_button"></div>
+
+                    </div>
+                </div>
+                <div id="sound_button">
+                    <div id="sound_on_button_container">
+                        <div id="sound_on_button"></div>
+                    </div>
+                    <div id="sound_off_button_container">
+                        <div id="sound_off_button"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sounds">
+        <audio src="piv.mp3" id="sound_piv"></audio>
+        <audio src="smask.mp3" id="sound_smask"></audio>
+        <audio src="levelcomplete.mp3" id="sound_level_complete"></audio>
+        <audio src="gameover.mp3" id="sound_game_over"></audio>
+        <audio src="background.mp3" id="sound_background"></audio>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
